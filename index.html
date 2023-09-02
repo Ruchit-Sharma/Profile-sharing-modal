@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Sharing</title>
+
+     <!-- Link Favicon  -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link JSS -->
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <div id="circle1"></div>
+        <div id="circle2"></div> 
+
+        <!-- hero card starts   -->
+        <div class="card-container">
+
+            <!-- Image -->
+            <div class="image-card">
+                <img src="./assets/HeroImage.jpg" alt="Hero">
+            </div>
+
+            <!-- 1st Heading -->
+            <h1 class="name">Ruchit Sharma</h1>
+
+            <!-- 2nd Heading -->
+            <h3 class="designation">Software Engineer</h3>
+            
+            <!-- button section starts -->
+            <div class="btn-grp">
+                <!-- Share Button -->
+                <button class="btn btnShare" onclick="openModal()">
+                    <i class="fa-solid fa-share">Share My Profile</i>
+                </button>
+
+                <!-- Follow Me -->
+                <button class="btn btnfollow" onclick="closeModal()">
+                    <a href="https://www.linkedin.com/in/ruchit-sharma-251790203">Follow Me</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Component Start -->
+     <div class="modal">
+        <div class="modalHeader">
+          <h1>Share My Profile</h1>
+          <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+  
+        <div>
+          <h3>Share this via</h3>
+          <div class="iconContainer">
+            <a
+              href=""
+              class="icon"
+              id="facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href=""
+              class="icon"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://web.telegram.org/z/" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Component Ends -->
+
+    <!-- Overlay  -->
+    <div class="overlay" onclick="closeModal()"></div>
+    
+    <!-- Font Addition -->
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
